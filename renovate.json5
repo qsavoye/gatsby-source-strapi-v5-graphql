@@ -1,0 +1,23 @@
+{
+  extends: [
+    "config:recommended",
+    "schedule:monthly",
+    ":disablePeerDependencies",
+    ":label(topic: automation)",
+  ],
+  major: {
+    dependencyDashboardApproval: true,
+  },
+  dependencyDashboard: true,
+  configMigration: true,
+  packageRules: [
+    {
+      groupName: "non-major dependency versions",
+      matchUpdateTypes: ["minor", "patch"],
+      additionalBranchPrefix: "{{#if parentDir}}packages{{else}}repo{{/if}}-",
+    },
+  ],
+  semanticCommits: "enabled",
+  semanticCommitType: "chore",
+  semanticCommitScope: "{{#if parentDir}}packages{{else}}repo{{/if}}",
+}

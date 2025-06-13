@@ -1,19 +1,57 @@
 {
-  "name": "gatsby-source-strapi-graphql",
-  "version": "6.1.2",
-  "description": "Source plugin for pulling documents into Gatsby-v4 from a Strapi-v4 API using the Strapi GraphQL plugin.",
+  "name": "gatsby-source-strapi-v5-graphql",
+  "version": "1.0.0",
+  "description": "Source plugin for pulling documents into Gatsby-v4 from a Strapi-v5 API using the Strapi GraphQL plugin. (Fork of gatsby-source-strapi-graphql)",
   "keywords": [
     "gatsby",
     "gatsby-plugin"
   ],
-  "author": "Tim Brandin <tim.brandin@gmail.com>",
+  "directories": {
+    "dist": "./dist"
+  },
+  "author": "Quentin Savoye <quentin.savoye@cil4sys.com>",
+  "maintainers": [
+    "Quentin Savoye <quentin.savoye@cil4sys.com>"
+  ],
+  "homepage": "https://github.com/qsavoye/gatsby-source-strapi-v5-graphql",
+  "repository": "https://github.com/qsavoye/gatsby-source-strapi-v5-graphql",
+  "bugs": "https://github.com/qsavoye/gatsby-source-strapi-v5-graphql/issues",
   "license": "0BSD",
   "dependencies": {
-    "@apollo/client": "^3.8.4",
-    "commonmark": "^0.30.0",
-    "cross-fetch": "^4.0.0",
-    "gatsby-source-filesystem": "^4.17.0",
-    "graphql": "^16.8.1",
+    "@apollo/client": "^3.13.8",
+    "babel-preset-gatsby-package": "^3.14.0",
+    "commonmark": "^0.31.2",
+    "cross-fetch": "^4.1.0",
+    "gatsby-source-filesystem": "^5.14.0",
+    "graphql": "^16.11.0",
     "react": "^18.2.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir ./dist --ignore \"**/__tests__,**/*.d.ts\" --extensions \".ts,.js\""
+  },
+  "devDependencies": {
+    "@babel/cli": "7.26.4",
+    "@babel/core": "7.26.10",
+    "@babel/eslint-parser": "^7.27.5",
+    "@babel/preset-react": "^7.27.1",
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.29.4",
+    "@strapi/types": "^5.15.1",
+    "@tsconfig/node22": "^22.0.0",
+    "@types/commonmark": "^0.27.9",
+    "@typescript-eslint/eslint-plugin": "^8.34.0",
+    "@typescript-eslint/parser": "^8.34.0",
+    "all-contributors-cli": "^6.26.1",
+    "chalk": "^5.4.1",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-unicorn": "^59.0.1",
+    "gatsby": "^5.14.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
+    "prettier": "^3.5.3",
+    "renovate": "^40.52.0",
+    "typescript": "^5.8.3"
   }
 }

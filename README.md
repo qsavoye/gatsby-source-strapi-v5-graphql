@@ -10,7 +10,8 @@
 ![npm (version)](https://img.shields.io/npm/v/gatsby-source-strapi-graphql)
 ![npm (downloads)](https://img.shields.io/npm/dm/gatsby-source-strapi-graphql)
 
-Source plugin for pulling documents into Gatsby-v4 from the Strapi-v4 graphql API.
+Source plugin for pulling documents into Gatsby-v5 from the Strapi-v5 graphql API. It is a fork of the original plugin [gatsby-source-strapi](https://github.com/relate-app/gatsby-source-strapi-graphql) with the following improvements:
+ - Support for Strapi-v5
 
 This plugin depends on Strapi's GraphQL introspection, which enables a lot of missing features in the plugin released by Strapi (i.e. grapqhl unions, builds failing due to missing data in fields, etc), but it also requires introspection to be enabled in production (read below how to enable it).
 
@@ -24,15 +25,15 @@ This plugin depends on Strapi's GraphQL introspection, which enables a lot of mi
 
 ## 🚀 Installing the plugin
 
-> This version of gatsby-source-strapi-graphql is only compatible with Strapi v4+ and uses the graphql api of Strapi.
+> This version of gatsby-source-strapi-v5-graphql is only compatible with Strapi v5 and uses the graphql api of Strapi.
 
 
 ```shell
 # Using Yarn
-yarn add gatsby-source-strapi-graphql
+yarn add gatsby-source-strapi-v5-graphql
 
 # Or using NPM
-npm install --save gatsby-source-strapi-graphql
+npm install --save gatsby-source-strapi-v5-graphql
 ```
 
 ## 🔥 Setting up the plugin

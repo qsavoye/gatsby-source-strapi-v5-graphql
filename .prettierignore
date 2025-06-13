@@ -1,0 +1,16 @@
+#Yarn
+node_modules
+.yarn
+.cache
+public
+
+
+# Tests
+__snapshots__
+test-data
+
+# Other
+changelog.md
+coverage
+
+dist

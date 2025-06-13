@@ -1,9 +1,9 @@
-const { ApolloClient, InMemoryCache, HttpLink } = require("@apollo/client")
-const fetch = require("cross-fetch");
+import { ApolloClient, InMemoryCache, HttpLink } from "@apollo/client";
+import fetch from "cross-fetch";
 
-const clients = {};
+const clients:Record<string, ApolloClient<unknown>> = {};
 
-const client = (apiURL, headers, token) => {
+const client = (apiURL:string, headers?:Record<string, string>, token?:string): ApolloClient<unknown> => {
   if (!clients[apiURL]) {
     clients[apiURL] = new ApolloClient({
       link: new HttpLink({
@@ -20,4 +20,4 @@ const client = (apiURL, headers, token) => {
   return clients[apiURL];
 };
 
-module.exports = client;
+export default client;
