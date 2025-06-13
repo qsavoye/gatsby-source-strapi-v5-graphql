@@ -27,6 +27,17 @@
     "react": "^18.2.0"
   },
   "scripts": {
+    "prepare": "husky",
+    "ac": "yarn all-contributors",
+    "cs": "yarn changeset",
+    "format": "yarn test:format --write",
+    "lint": "yarn test:lint --fix",
+    "test:exports": "node scripts/gatsby-export-test.mjs",
+    "test:format": "yarn prettier \"**/*.{mjs,js,ts,md,json,yml,json,json5}\" --check",
+    "test:lint": "yarn eslint \"src/**/*.{js,ts}\"",
+    "test:types": "yarn tsc",
+    "publish-ci": "yarn build && yarn changeset publish",
+    "postinstall": "yarn husky install",
     "build": "babel src --out-dir ./dist --ignore \"**/__tests__,**/*.d.ts\" --extensions \".ts,.js\""
   },
   "devDependencies": {
@@ -48,7 +59,6 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-unicorn": "^59.0.1",
     "gatsby": "^5.14.4",
-    "husky": "^9.1.7",
     "lint-staged": "^16.1.0",
     "prettier": "^3.5.3",
     "renovate": "^40.52.0",

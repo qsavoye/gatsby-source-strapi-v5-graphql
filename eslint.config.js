@@ -68,7 +68,7 @@ module.exports = [
     },
   },
   {
-    files: ["packages/**/*.ts"],
+    files: ["src/**/*.ts"],
     languageOptions: {
       parser: ts_parser,
     },
