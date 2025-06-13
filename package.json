@@ -1,6 +1,6 @@
 {
   "name": "gatsby-source-strapi-v5-graphql",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Source plugin for pulling documents into Gatsby-v4 from a Strapi-v5 API using the Strapi GraphQL plugin. (Fork of gatsby-source-strapi-graphql)",
   "keywords": [
     "gatsby",
@@ -36,7 +36,8 @@
     "test:lint": "yarn eslint \"src/**/*.{js,ts}\"",
     "test:types": "yarn tsc",
     "publish-ci": "yarn build && yarn changeset publish",
-    "build": "babel src --out-dir ./dist --ignore \"**/__tests__,**/*.d.ts\" --extensions \".ts,.js\""
+    "build": "babel src --out-dir ./dist --ignore \"**/__tests__,**/*.d.ts\" --extensions \".ts,.js\"",
+    "postinstall": "yarn build"
   },
   "devDependencies": {
     "@babel/cli": "7.26.4",
