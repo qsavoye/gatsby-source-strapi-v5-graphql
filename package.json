@@ -59,6 +59,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-unicorn": "^59.0.1",
     "gatsby": "^5.14.4",
+    "husky": "^9.1.7",
     "lint-staged": "^16.1.0",
     "prettier": "^3.5.3",
     "renovate": "^40.52.0",
