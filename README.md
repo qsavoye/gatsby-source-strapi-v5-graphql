@@ -7,8 +7,8 @@
   Strapi Source Plugin
 </h1>
 
-![npm (version)](https://img.shields.io/npm/v/gatsby-source-strapi-graphql)
-![npm (downloads)](https://img.shields.io/npm/dm/gatsby-source-strapi-graphql)
+![npm (version)](https://img.shields.io/npm/v/gatsby-source-strapi-v5-graphql)
+![npm (downloads)](https://img.shields.io/npm/dm/gatsby-source-strapi-v5-graphql)
 
 Source plugin for pulling documents into Gatsby-v5 from the Strapi-v5 graphql API. It is a fork of the original plugin [gatsby-source-strapi](https://github.com/relate-app/gatsby-source-strapi-graphql) with the following improvements:
  - Support for Strapi-v5
