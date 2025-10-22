@@ -1,6 +1,6 @@
 {
   "name": "gatsby-source-strapi-v5-graphql",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Source plugin for pulling documents into Gatsby-v4 from a Strapi-v5 API using the Strapi GraphQL plugin. (Fork of gatsby-source-strapi-graphql)",
   "keywords": [
     "gatsby",
