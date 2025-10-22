@@ -32,7 +32,7 @@ const getNodeFields = (
   n = 0,
   root = false,
 ): string | Array<string> | null => {
-  const max = 16;
+  const max = 8;
   if (n > max) {
     return null;
   }
